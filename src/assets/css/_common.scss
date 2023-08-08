@@ -226,3 +226,20 @@ body {
 .test2 {
   border: 1px solid blue;
 }
+
+@media (max-width: 700px) {
+  .displayNone-sm {
+    display: none;
+  }
+  .flex-sm {
+    display: flex;
+  }
+}
+@media (min-width: 701px) {
+  .displayNone-lg {
+    display: none;
+  }
+  .flex-lg {
+    display: flex;
+  }
+}
