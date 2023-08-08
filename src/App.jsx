@@ -8,7 +8,6 @@ const Header = () => {
   const [screenHeight, setScreenHeight] = React.useState(window.innerHeight);
   const updateScreen = () => {
     setScreenHeight(window.innerHeight)
-    console.log(screenHeight)
   }
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -131,7 +130,7 @@ const Section2 = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              장점은 부각! 단점은 보완!
+              장점은 부각!<b> 단점은 보완!</b>
             </motion.div>
           </div>
           <motion.div
@@ -176,7 +175,7 @@ const Section3 = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              신속성 + 정확성 + 친절성 = 최지성
+              신속성 + 정확성 + 친절성 <b>= </b> <b> 최지성</b>
             </motion.div>
           </div>
         </div>
@@ -217,12 +216,14 @@ const Section4 = () => {
   return (
     <div className='section4-wrap'>
       <div className='section4'>
-        <motion.div 
-          className='section4-img'
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        />
+        <div className='section4-img-wrap'>
+          <motion.div 
+            className='section4-img'
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          />
+        </div>
         <div className='section4-content'>
           <div className='section4-content-top'>
             <motion.div
@@ -338,7 +339,7 @@ const Section6 = () => {
               <div
                 className='section6-content-item-list'
               >
-                • &nbsp; (추천 100건 이상, 인터뷰 진행 30건 이상)
+                • &nbsp; (추천 120건 이상, 인터뷰 진행 40건 이상)
               </div>
             </div>
             <div className='section6-content-stitle'>
@@ -346,7 +347,7 @@ const Section6 = () => {
               <div
                 className='section6-content-item-list'
               >
-                • &nbsp; 유명 커피 프랜차이즈 POS 담당 파트장 &nbsp;  &nbsp; 채용성사 (5,000)<br/>
+                • &nbsp; 유명 커피 프랜차이즈 POS 담당 파트장 채용성사 (5,000)<br/>
                 &nbsp;  &nbsp; (POS 개발 / 제작 간에 이슈 전달 담당자 물색)<br/>
                 &nbsp;  &nbsp; (신세계 계열사 POS 개발 관여자 서칭하여 컨택→추천)
               </div>
