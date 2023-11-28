@@ -124,6 +124,7 @@ const Section2 = () => {
               transition={{ duration: 1 }}
             >
               커리어패스를 함께 할 조력자
+              
             </motion.div>
             <motion.div
               className='section2-content-top2'
