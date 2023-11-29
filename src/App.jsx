@@ -490,7 +490,7 @@ const Footer = () => {
       </a>
       <div className='footer-right'>
         Tel :  010-2598-8843 <br/>
-        Email : choiji1995@naver.com<br/>
+        Email : with.jisunghr@gmail.com <br/>
         Copyright 2023. ChoiJiSung. All rights reserved.
       </div>
     </div>
